@@ -13,10 +13,7 @@ local_dir = src_repo.replace('/', '_')
 
 create_repo(repo_id=dest_repo, exist_ok=True)
 
-snapshot_download(repo_id=src_repo,
-    local_dir=local_dir,
-    allow_patterns=["*.md", "*model.safetensors", "tokenizer.json , config.json , generation_config.json"]
-)
+snapshot_download(repo_id=src_repo, local_dir=local_dir, allow_patterns=["*.md", "*model.safetensors", "tokenizer.json , config.json , generation_config.json"])
 
 for f in os.listdir(local_dir):
     path_model = os.path.join(local_dir, f)
