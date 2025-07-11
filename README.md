@@ -1,4 +1,7 @@
-#  GPTQ my repo 🤗
+## GPTQ my repo 🤗
 
-Use with '''
-!python3 -c "$(curl -fsSL https://gist.githubusercontent.com/.../app.py)"'''
+Use with:
+
+```shell
+!python3 -c "$(curl -fsSL https://github.com/mwdut/GPTQ-my-repo/blob/main/app.py)
+```
