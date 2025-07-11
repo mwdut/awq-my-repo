@@ -1,4 +1,4 @@
-## GPTQ my repo 🤗
+## Quantize model's with AutoGPTQ
 
 Use with:
 
