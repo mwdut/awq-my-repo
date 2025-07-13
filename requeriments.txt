@@ -1,1 +1,2 @@
-huggingface_hub
+huggingface_hub==0.33.2
+autogptq==0.7.1
