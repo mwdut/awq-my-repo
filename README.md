@@ -5,6 +5,3 @@
 
 Use localy with:
 
-```shell
-!python3 -c "$(curl -fsSL https://raw.githubusercontent.com/mwdut/awq-my-repo/refs/heads/main/app.py)"
-```
