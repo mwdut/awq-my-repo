@@ -3,14 +3,14 @@ from huggingface_hub import login, create_repo, snapshot_download, upload_folder
 from awq import AutoAWQForCausalLM
 from transformers import AutoTokenizer
 
-token = getpass.getpass("HF Write Token: ")
+token = getpass.getpass("Write Token: ")
 login(token=token)
 
-hf_model = input("HF Model ID: ")
+hf_model = input("HF Repo ID: ")
 
 api = HfApi()
 user = api.whoami()['name']
-dest_repo = f"{user}/{hf_model.split('/')[-1]}-AWQ"
+dest_repo = f"{user}/{hf_model.split('/')[-1]}-awq"
 local_dir = hf_model.replace('/', '_')
 
 create_repo(repo_id=dest_repo, exist_ok=True)
@@ -21,7 +21,6 @@ if not os.path.exists(os.path.join(local_dir, "model.safetensors")):
     shutil.rmtree(local_dir, ignore_errors=True)
     exit(1)
 
-print("Quantizing model...")
 quant_config = {"zero_point": True, "q_group_size": 128, "w_bit": 4, "version": "GEMM"}
 
 model = AutoAWQForCausalLM.from_pretrained(hf_model)
