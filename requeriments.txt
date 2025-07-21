@@ -1,2 +1,3 @@
 huggingface_hub==0.33.2
 autoawq==0.2.9
+‎transformers
