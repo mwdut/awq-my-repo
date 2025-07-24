@@ -1,6 +1,6 @@
 # AutoAWQ Model Quantization CLI 🚀
 
-A command-line tool for quantizing Hugging Face models using AutoAWQ and uploading them to the Hub. Reduces model size by ~75% with minimal accuracy loss.
+A command-line tool for quantizing Hugging Face models using AutoAWQ and uploading them to the Hub.
 
 ## Quick Start 👾
 
