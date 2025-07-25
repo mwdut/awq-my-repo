@@ -35,10 +35,6 @@ python app.py
 - Hugging Face account
 - 8GB+ RAM (16GB+ recommended)
 
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - [AutoAWQ](https://github.com/casper-hansen/AutoAWQ) - Core quantization library
