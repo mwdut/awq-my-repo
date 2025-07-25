@@ -22,7 +22,7 @@ git clone https://github.com/mwdut/awq-my-repo.git
 cd awq-my-repo
 python -m venv awq-env
 source awq-env/bin/activate  # Linux/Mac
-# awq-env\Scripts\activate   # Windows
+awq-env\Scripts\activate   # Windows
 pip install -r requirements.txt
 # run
 python app.py
