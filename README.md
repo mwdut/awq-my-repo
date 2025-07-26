@@ -34,8 +34,3 @@ python app.py
 - CUDA-compatible GPU (recommended)
 - Hugging Face account
 - 8GB+ RAM (16GB+ recommended)
-
-## Acknowledgments
-
-- [AutoAWQ](https://github.com/casper-hansen/AutoAWQ) - Core quantization library
-- [AWQ Paper](https://arxiv.org/abs/2306.00978) - Original research
