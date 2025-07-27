@@ -16,14 +16,23 @@ A command-line tool for quantizing Hugging Face models using AutoAWQ and uploadi
 
 Try the web interface version directly in your browser - no setup required!
 
+#### Run Localy with Docker 🐋:
+```
+docker run -it -p 7860:7860 --platform=linux/amd64 --gpus all \
+	registry.hf.space/mwdut-awq-my-repo:latest python app.py
+```
+
 ### Local Installation 💻
 ```bash
 git clone https://github.com/mwdut/awq-my-repo.git
 cd awq-my-repo
+
 python -m venv awq-env
+
 source awq-env/bin/activate  # Linux/Mac
 awq-env\Scripts\activate   # Windows
 pip install -r requirements.txt
+
 # run
 python app.py
 ```
