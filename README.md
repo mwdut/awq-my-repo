@@ -12,9 +12,10 @@ A command-line tool for quantizing Hugging Face models using AutoAWQ and uploadi
 3. Run all cells in order
 
 ### Hugging Face Space 🤗
+Try the web interface version directly in your browser - no setup required!
+
 [![Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/mwdut/awq-my-repo)
 
-Try the web interface version directly in your browser - no setup required!
 
 #### Run Localy with Docker 🐋:
 ```
